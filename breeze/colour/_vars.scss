@@ -1,0 +1,24 @@
+@use 'sass:map';
+
+$palette: (
+    'primary': #c3fa6b,
+    'secondary': #38a87f,
+    'accent': #004d3e,
+    'muted': #edf3f2,
+    'body': #667085,
+    'heading': #101828,
+    'border': #e5e7eb,
+    'input': #d6d3d1,
+    'success': #28a745,
+    'danger': #dc3545,
+    'warning': #ffc107,
+    'white': #ffffff,
+    'black': #000000,
+);
+
+$shades: (
+    primary-light: lighten(map.get($palette, primary), 20%),
+    primary-dark: darken(map.get($palette, primary), 20%),
+    secondary-light: lighten(map.get($palette, secondary), 20%),
+    secondary-dark: darken(map.get($palette, secondary), 20%)
+);

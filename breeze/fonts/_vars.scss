@@ -1,0 +1,81 @@
+$font-heading: Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-body: Be Vietnam Pro, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-base: 16px;
+
+$headings: (
+    1: (
+        size: 32px,
+        leading: 40px,
+        kerning: 0,
+        weight: 700
+    ),
+    2: (
+        size: 26px,
+        leading: 34px,
+        kerning: 0,
+        weight: 700
+    ),
+    3: (
+        size: 20px,
+        leading: 28px,
+        kerning: 0,
+        weight: 700
+    ),
+    4: (
+        size: 18px,
+        leading: 26px,
+        kerning: 0,
+        weight: 700
+    ),
+    default: (
+        size: 20px,
+        leading: 28px,
+        kerning: 0,
+        weight: 700
+    )
+);
+
+$text: (
+    body: (
+        size: 16px,
+        leading: 22px,
+        kerning: 0,
+        weight: 400
+    ),
+    small: (
+        size: 14px,
+        leading: 20px,
+        kerning: 0,
+        weight: 400
+    ),
+    xsmall: (
+        size: 12px,
+        leading: 12px,
+        kerning: 0,
+        weight: 400
+    ),
+    large: (
+        size: 18px,
+        leading: 24px,
+        kerning: 0,
+        weight: 400
+    ),
+    leading: (
+        size: 22px,
+        leading: 28px,
+        kerning: 0,
+        weight: 500
+    ),
+    input: (
+        size: 14px,
+        leading: 14px,
+        kerning: 0,
+        weight: 400
+    ),
+    default: (
+        size: 16px,
+        leading: 22px,
+        kerning: 0,
+        weight: 400
+    )
+);

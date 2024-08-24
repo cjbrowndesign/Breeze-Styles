@@ -1,0 +1,32 @@
+@use './vars' as *;
+@use './functions' as fonts;
+
+@mixin heading($key) {
+    font-size: fonts.font-size($headings, $key);
+    line-height: fonts.font-leading($headings, $key);
+    letter-spacing: fonts.font-kerning($headings, $key);
+    font-weight: fonts.font-weight($headings, $key);
+}
+
+@mixin text($key) {
+    font-size: fonts.font-size($text, $key);
+    line-height: fonts.font-leading($text, $key);
+    letter-spacing: fonts.font-kerning($text, $key);
+    font-weight: fonts.font-weight($text, $key);
+}
+
+@mixin font-heading {
+    font-family: $font-heading;
+}
+
+@mixin font-body {
+    font-family: $font-body;
+}
+
+@mixin font-size($size, $base: $font-base) {
+    font-size: fonts.rem($size, $base);
+}
+
+@mixin font-leading($size, $base: $font-base) {
+    line-height: fonts.rem($size, $base);
+}

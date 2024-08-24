@@ -1,0 +1,13 @@
+@use './functions' as colour;
+
+@mixin background-colour($key, $opacity: 100%) {
+    background-color: rgba(colour.colour($key), $opacity);
+}
+
+@mixin text-colour($key) {
+    color: colour.colour($key);
+}
+
+@mixin border-colour($key) {
+    border-color: colour.colour($key);
+}

@@ -1,0 +1,13 @@
+{
+	"name": "breeze-styles",
+	"version": "1.0.0",
+	"description": " Starter SASS framework for personal projects",
+	"author": "Cj Brown <hello@cjbrowndesign.co.uk>",
+	"private": true,
+	"scripts": {
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	}
+}

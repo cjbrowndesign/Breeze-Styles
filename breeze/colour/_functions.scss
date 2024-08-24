@@ -1,0 +1,14 @@
+@use './vars' as *;
+@use 'sass:map';
+
+@function get($key) {
+    @return map.get($palette, $key);
+}
+
+@function colour($key) {
+    @return map.get($palette, $key);
+}
+
+@function shade($key) {
+    @return map.get($shades, $key);
+}

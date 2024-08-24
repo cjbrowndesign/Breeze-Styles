@@ -1,0 +1,19 @@
+@use './functions' as query;
+
+@mixin media-from($size) {
+    @media (min-width: query.breakpoint($size)) {
+        @content;
+    }
+}
+
+@mixin media-until($size) {
+    @media (max-width: query.breakpoint($size)) {
+        @content;
+    }
+}
+
+@mixin media-between($min-size, $max-size) {
+    @media (min-width: query.breakpoint($min-size)) and (max-width: query.breakpoint($max-size)) {
+        @content;
+    }
+}

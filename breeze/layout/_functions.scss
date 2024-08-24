@@ -1,0 +1,10 @@
+@use './vars' as *;
+@use 'sass:math';
+
+@function grid-width($columns) {
+    @return math.div($columns, $cols) * 100%;
+}
+
+@function gap() {
+    @return $gap;
+}

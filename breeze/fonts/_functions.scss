@@ -1,0 +1,22 @@
+@use './vars' as *;
+@use 'sass:map';
+
+@function font-size($map, $key) {
+    @return map.get(map.get($map, $key), 'size');
+}
+
+@function font-leading($map, $key) {
+    @return map.get(map.get($map, $key), 'leading');
+}
+
+@function font-kerning($map, $key) {
+    @return map.get(map.get($map, $key), 'kerning');
+}
+
+@function font-weight($map, $key) {
+    @return map.get(map.get($map, $key), 'weight');
+}
+
+@function rem($px, $base: $font-base) {
+    @return calc($px / $base) * 1rem;
+}
